@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <>
   <Header/>
+  <div className="mt-32">
   <Hero/>
+  </div>
   </>
   );
 }

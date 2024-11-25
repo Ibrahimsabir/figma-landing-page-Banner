@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Libre_Bodoni } from '@next/font/google';
 
 const libre = Libre_Bodoni({
@@ -8,9 +9,9 @@ const libre = Libre_Bodoni({
 
 const Hero = () => {
   return (
-    <div className={`${libre.className} relative flex flex-col items-center mt-20`}>
+    <div className={`${libre.className} mt-48`}>
       {/* Hero Section */}
-      <div className="flex h-[80vh] w-[80%]">
+      <div className=" w-[90%] flex justify-between items-center m-32 ">
         <div className=" w-1/2 flex flex-col justify-center items-start gap-7 px-12 m-auto">
           <h1 className="font-bold text-[40px] mt-16 mr-16 leading-[164.5%] tracking-[0.025em] text-black text-start">
             IMPECCABLE CRAFTSMANSHIP AND FINESSE
@@ -24,20 +25,25 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        {/* <div className="w-1/2 flex justify-center items-center border-2 border-gray-300 rounded-tl-[6rem] rounded-br-[6rem]"> */}
-          {/* Uncomment the Image component when the asset is available */}
-          {/* <Image
-            src={"/images/figma_image.svg"}
+        <div className='w-1/2 ml-32'>
+        <div className="w-[80%] "> 
+        <Image
+            src={"/images/hero.jfif"}
             alt="hero image"
             width={502}
             height={465}
-          /> */}
-          <div className="h-[647px] w-[462px] t-[196px] bg-gray-200 rounded-tl-[6rem] rounded-br-[6rem] flex justify-center items-center m-auto">
-            Image Placeholder
+            className='flex justify-center items-center w-[90%] h-90vh box-border border-gray-300 rounded-tl-[6rem] border-2 rounded-br-[6rem]'
+          />
+          {/* Uncomment the Image component when the asset is available */}
+          {/* <div className="h-[647px] w-[462px] t-[196px] border-4 border-gray-200 rounded-tl-[6rem] rounded-br-[6rem] m-20"> */}
+          
+       
+          
           </div>
-        
+        </div>
       </div>
-    </div>
+      </div>
+  
   );
 };
 
